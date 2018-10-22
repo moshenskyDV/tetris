@@ -1,0 +1,81 @@
+{
+  "name": "reacttest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "classnames": "^2.2.6",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "express": "~4.16.0",
+    "file-loader": "^2.0.0",
+    "hjs": "~0.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "http-errors": "~1.6.2",
+    "ignore-styles": "^5.0.1",
+    "jest": "^23.6.0",
+    "jest-css-modules": "^1.1.0",
+    "jest-enzyme": "^6.1.2",
+    "jest-mock": "^23.2.0",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.13",
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "~1.9.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1",
+    "tapable": "1.0.0-beta.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "backend": "node ./backend/bin/www",
+    "test": "jest",
+    "test:watch": "jest:watch"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>__tests__/setup/setupEnzyme.js",
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/setup/",
+      "__snapshots__"
+    ],
+    "transform": {
+      ".*": "<rootDir>/node_modules/jest-css-modules"
+    }
+  }
+}

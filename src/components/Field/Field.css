@@ -1,0 +1,20 @@
+.field,
+.aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.field{
+    margin: 5px;
+}
+
+.status,
+.score {
+    border: 1px solid #000;
+    margin: 5px;
+    height: 30px;
+    padding: 3px 6px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}

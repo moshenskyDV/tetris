@@ -1,0 +1,15 @@
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fill {
+    background: blue;
+}
+
+.active {
+    background: cornflowerblue;
+}
