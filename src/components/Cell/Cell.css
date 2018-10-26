@@ -4,6 +4,17 @@
     border: 1px solid #ccc;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+}
+
+.cell::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border: 1px solid #fff;
 }
 
 .fill {

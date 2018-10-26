@@ -4,7 +4,10 @@ import './App.css'
 
 const App = () => {
     return (
-        <Field />
+        <div className="app">
+            <div className="title">Tetris</div>
+            <Field/>
+        </div>
     )
 }
 

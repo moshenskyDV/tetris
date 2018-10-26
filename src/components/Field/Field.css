@@ -2,19 +2,24 @@
 .aside {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 
 .field{
-    margin: 5px;
+    margin: 2px;
 }
 
 .status,
 .score {
     border: 1px solid #000;
-    margin: 5px;
+    margin: 2px;
     height: 30px;
     padding: 3px 6px;
-    width: 120px;
+    width: 74px;
     display: flex;
     align-items: center;
+}
+
+.wrapper{
+    font-size: 0;
 }

@@ -187,7 +187,6 @@ class Field extends Component {
         let defaultPath = Figures.find(figure => (figure.type === this.state.currentFigureType && figure.id === this.state.currentFigureId)).path
         let offsetLeft = this.state.currentFigure[0][0] - defaultPath[0][0]
         let offsetTop = this.state.currentFigure[0][1] - defaultPath[0][1]
-        // console.log(offsetLeft, '    ', offsetTop);
         let next = Object.assign({}, Figures.find(figure => (figure.type === this.state.currentFigureType && figure.id === this.state.currentFigureId + 1)))
         if (!next.hasOwnProperty('id')) {
             next = Object.assign({}, Figures.find(figure => (figure.type === this.state.currentFigureType && figure.id === 1)))
@@ -195,7 +194,7 @@ class Field extends Component {
         let canBeShifted = true;
         next.path = next.path.map(item => [item[0] + offsetLeft, item[1] + offsetTop])
         next.path.map(item => {
-            if (!(item[0] >= 0) || !(item[0] - 1 < this.state.fieldWidth) || this.state.field[item[1]][item[0]] === 'fill' || this.state.field[item[1]][item[0]] === 'fill') {
+            if (!(item[0] >= 0) || !(item[0] < this.state.fieldWidth) || this.state.field[item[1]][item[0]] === 'fill' || this.state.field[item[1]][item[0]] === 'fill') {
                 canBeShifted = false;
             }
         })
